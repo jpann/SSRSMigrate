@@ -100,7 +100,7 @@
     description: SSRSMigrate release v$(APPVEYOR_BUILD_VERSION)\n$(release_description)
     provider: GitHub
     auth_token:
-      secure: EXRr3SxM7c0kVhOc5HAyMr4gUaCJA11QE/RbTNrqYil9WXKDqoQoigCfdD6ZjhDX # encrypted token from GitHub
+      secure: 7ru0KS1ULd4YvDykwbP+BtE0c3t0z52q4Dx2WjOe4Y1rNfpTNAiMnhBcRhOJh1em # encrypted token from GitHub
     artifact: /SSRSMigrate-v.*\.zip/
     draft: false
     prerelease: false
@@ -201,7 +201,7 @@
     description: SSRSMigrate development release v$(developVersion)
     provider: GitHub
     auth_token:
-      secure: EXRr3SxM7c0kVhOc5HAyMr4gUaCJA11QE/RbTNrqYil9WXKDqoQoigCfdD6ZjhDX # encrypted token from GitHub
+      secure: 7ru0KS1ULd4YvDykwbP+BtE0c3t0z52q4Dx2WjOe4Y1rNfpTNAiMnhBcRhOJh1em # encrypted token from GitHub
     artifact: /SSRSMigrate-v.*\.zip/
     draft: false
     prerelease: true
