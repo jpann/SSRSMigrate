@@ -68,5 +68,11 @@
     <Setting Name="EnableTls11" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="SSRSInvalidPathChars" Type="System.String" Scope="User">
+      <Value Profile="(Default)">:?;@&amp;=+$,\*&gt;&lt;|"</Value>
+    </Setting>
+    <Setting Name="SSRSInvalidNameChars" Type="System.String" Scope="User">
+      <Value Profile="(Default)">:?;@&amp;=+$,\*&gt;&lt;|."/</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

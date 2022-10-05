@@ -6,7 +6,7 @@ namespace SSRSMigrate.SSRS.Validators
     public class ReportServerPathValidator : IReportServerPathValidator
     {
         private ILogger mLogger = null;
-        private string mInvalidPathChars = ":?;@&=+$,\\*><|.\"";
+        private string mInvalidPathChars = ":?;@&=+$,\\*><|\"";
         private string mInvalidNameChars = ":?;@&=+$,\\*><|.\"/";
         private int mPathMaxLength = 260;
 
@@ -16,14 +16,19 @@ namespace SSRSMigrate.SSRS.Validators
             get { return this.mLogger; }
             set { this.mLogger = value; }
         }
+
+        [Inject]
         public string InvalidPathChars
         {
             get { return this.mInvalidPathChars; }
+            set { this.mInvalidPathChars = value; }
         }
 
+        [Inject]
         public string InvalidNameChars
         {
             get { return this.mInvalidNameChars; }
+            set { this.mInvalidNameChars = value; }
         }
 
         public bool Validate(string path)
@@ -31,6 +36,7 @@ namespace SSRSMigrate.SSRS.Validators
             bool isValidPath = true;
 
             this.mLogger.Debug("Validate - name = {0}", path);
+            this.mLogger.Trace("Validate - InvalidPathChars = {0}", this.mInvalidPathChars);
 
             if (string.IsNullOrEmpty(path))
                 isValidPath = false;
@@ -49,6 +55,7 @@ namespace SSRSMigrate.SSRS.Validators
             bool isValidPath = true;
 
             this.mLogger.Debug("ValidateName - name = {0}", name);
+            this.mLogger.Trace("ValidateName - InvalidNameChars = {0}", this.mInvalidNameChars);
 
             if (string.IsNullOrEmpty(name))
                 isValidPath = false;

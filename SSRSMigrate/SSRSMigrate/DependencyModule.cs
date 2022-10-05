@@ -45,7 +45,9 @@ namespace SSRSMigrate
                .Named("2010-DEST");
 
             // Bind IReportServerPathValidator
-            this.Bind<IReportServerPathValidator>().To<ReportServerPathValidator>();
+            this.Bind<IReportServerPathValidator>().To<ReportServerPathValidator>()
+                .WithPropertyValue("InvalidPathChars", c => Properties.Settings.Default.SSRSInvalidPathChars)
+                .WithPropertyValue("InvalidNameChars", c => Properties.Settings.Default.SSRSInvalidNameChars);
 
             // Bind IReportServerReader
             this.Bind<IReportServerReader>()
