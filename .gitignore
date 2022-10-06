@@ -179,3 +179,5 @@ tools
 packages
 
 .vs/
+
+SSRSMigrate/SSRSMigrate.IntegrationTests/Configs/local.config
