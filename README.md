@@ -1,4 +1,4 @@
-SSRSMigrate ![](https://img.shields.io/github/license/jpann/SSRSMigrate.svg) [![Github All Releases](https://img.shields.io/github/downloads/jpann/SSRSMigrate/total.svg)]() ![GitHub Releases](https://img.shields.io/github/downloads/jpann/SSRSMigrate/latest/total)
+SSRSMigrate [![Github All Releases](https://img.shields.io/github/downloads/jpann/SSRSMigrate/total.svg)]() ![GitHub Releases](https://img.shields.io/github/downloads/jpann/SSRSMigrate/latest/total)
 ======== 
 
 | Master  |      Develop      |
